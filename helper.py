@@ -3,10 +3,12 @@
 Created on Mon Feb 12 11:47:32 2018
 
 @author: Alexandre Boyker
+
+module containing miscallenaous functions
+
 """
 
 import re
-#import os
 import codecs
 import numpy as np
 
@@ -53,7 +55,10 @@ def plot_confusion_matrix(y_test, y_pred, classes,
 
 
 class StsaParser(object):
+    """
+    parser to get the Stsa dataset
     
+    """
     def __init__(self):
         pass
     
