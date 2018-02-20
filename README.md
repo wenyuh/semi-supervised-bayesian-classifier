@@ -15,3 +15,7 @@ We build a generative model for documents, whose intuition is quite simple:
 3) we throw the V-sided biased dice related to this label (V is the size of the vocabulary) |x_i| times, where |x_i| is the length of document i
 
 3) count the number of times that each word appears to get a 'word count' representation
+
+Technically speaking, we have a mixture model over the m label components and we want to learn the parameters that maximize the model's  likelihood
+
+
