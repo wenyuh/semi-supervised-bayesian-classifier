@@ -18,4 +18,5 @@ We build a generative model for documents, whose intuition is quite simple:
 
 Technically speaking, we have a mixture model over the m label components and we want to learn the parameters that maximize the model's  likelihood
 
+![alt text](bayes_pseudo.PNG)
 
