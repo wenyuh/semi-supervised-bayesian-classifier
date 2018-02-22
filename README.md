@@ -4,7 +4,7 @@ Modified Naive Bayes for semi-supervised learning
 TODO: Finish Readme
 ## Overview
 
-The Naive Bayes classifier is known to work well on NLP tasks such as documents classification, after the documents have been vectorized using for instance a bag-of-words or word count embedding. However, in the presence of a small number of labelled documents and a large number of unlabelled documents, would it be possible to 'tweak' regular Naive Bayes in order to take advantage of the vast amount of unlabelled data? We consider here the results of Nigam et al. (Semi-supervised text classification using EM, available in the book simply called 'Semi-supervised learning').
+The Naive Bayes classifier is known to work well on NLP tasks such as documents classification, after the documents have been vectorized using for instance a bag-of-words or word count embedding. However, in the presence of a small number of labelled documents and a large number of unlabelled documents, would it be possible to 'tweak' regular Naive Bayes in order to take advantage of the vast amount of unlabelled data? We consider here the results of Nigam et al. (Semi-supervised text classification using EM, available in the book simply called ['Semi-supervised learning'](https://mitpress.mit.edu/books/semi-supervised-learning)). 
 
 ## A generative model for documents
 
@@ -18,5 +18,10 @@ We build a generative model for documents, whose intuition is quite simple:
 
 Technically speaking, we have a mixture model over the m label components and we want to learn the parameters that maximize the model's  likelihood
 
+
+## Algorithm pseudo-code
+
+Here is the pseudo code of the algorithm used. For more details, check the section by  Nigam et al., Semi-supervised text classification using EM, available in the book 'Semi-supervised learning'.
 ![alt text](bayes_pseudo.PNG)
+
 
