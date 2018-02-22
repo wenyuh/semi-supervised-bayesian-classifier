@@ -21,7 +21,21 @@ Technically speaking, we have a mixture model over the m label components and we
 
 ## Algorithm pseudo-code
 
-Here is the pseudo code of the algorithm used. For more details, check the section by  Nigam et al., Semi-supervised text classification using EM, available in the book 'Semi-supervised learning'.
+Here is the pseudo code of the algorithm used. For more details, check the section by  Nigam et al., Semi-supervised text classification using EM, available in the book 'Semi-supervised learning'. The idea behind it is quite simple.
+
+* Train a Naive Bayes classifier on the labelled part of the dataset.
+
+* Use the learnt weights to make predictions on the unlabelled part of the data set.
+
+* The predictions can be transformed into labels and be used to train a new classifier using the previously unlabelled part of the data set with the 'synthetic labels'
+
+* repeat the procedure untill the value of the model total likelihood does not decrease anymore (likelihood is computed using the full dataset).
+
+
 ![alt text](bayes_pseudo.PNG)
 
+## Training
 
+cd to the project directory and execute
+
+`python train.py`
