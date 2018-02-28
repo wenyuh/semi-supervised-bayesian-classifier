@@ -37,6 +37,6 @@ Here is the pseudo code of the algorithm used. For more details, check the secti
 
 cd to the project directory and execute
 
-`python train.py`
+`python main.py`
 
 The default dataset is the Standford Movie review data set. The results show that the total likelihood decreases up to a certain point and then stabilize, when 'all the juice' has been extracted from the unlabelled data.
