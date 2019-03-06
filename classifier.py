@@ -56,7 +56,7 @@ class NaiveBayesSemiSupervised(object):
         train the modified Naive bayes classifier using both labelled and 
         unlabelled data. We use the CountVectorizer vectorizaton method from scikit-learn
         
-        positional arguments:
+        positional arguments:!
             
             -- X_supervised: list of documents (string objects). these documents have labels
             
